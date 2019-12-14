@@ -222,7 +222,7 @@
 			margin-left: 1248px;
 		}
 		#navbar{
-			background-color: #456;
+			background-image: linear-gradient(to right, #000066), #FF5050);
 			top:0;
 			z-index:10;
 			margin:0;
@@ -238,15 +238,15 @@
 			padding: 10px 20px; 
 		}
 		#navbar a:hover{
-			color:black;
-			background-color:white;
+			color:#0000CC;
+			background-color:rgba(255,150,150, 1);
 		}
 		#scorebox{
 			margin:auto;
 			margin-top: 50px;
 			width: 200px;
 			height: 50px;
-			border: 1px solid gold;
+			border: 1.5px solid #73245C;
 			font-size: 22pt;
 			border-radius: 20px 30px;
 			overflow:hidden;
@@ -434,7 +434,7 @@
 		function turnIndicator(){//colors which side serves
 			var x = document.getElementsByClassName("doubles ".concat(which_side," ",left_or_right));
 			for(i=0; i<x.length; i++){
-				x[i].style.backgroundColor = (which_side=="court1") ? "rgba(200,0,0,0.6)" : "rgba(0,0,200,0.6)";//red if court1 and blue if court2
+				x[i].style.backgroundColor = (which_side=="court1") ? "rgba(255,0,0,0.6)" : "rgba(0,0,200,0.6)";//red if court1 and blue if court2
 			}
 		}
 		function cleansingBot_v2(){//cleans names and colors
